@@ -1761,6 +1761,7 @@ body:has(.courses-hero) #ambiente {
 }
 
 @media (hover: hover) {
+
     .courses-program-card:hover,
     .courses-participation-card:hover {
         transform: translateY(-5px);
@@ -1795,19 +1796,15 @@ body:has(.courses-hero) #ambiente {
 
 .home-events-card {
     background-image:
-        linear-gradient(
-            rgba(230, 239, 220, 0.82),
-            rgba(230, 239, 220, 0.88)
-        ),
+        linear-gradient(rgba(230, 239, 220, 0.82),
+            rgba(230, 239, 220, 0.88)),
         url("https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1100&q=85");
 }
 
 .home-courses-card {
     background-image:
-        linear-gradient(
-            rgba(230, 239, 220, 0.82),
-            rgba(230, 239, 220, 0.88)
-        ),
+        linear-gradient(rgba(230, 239, 220, 0.82),
+            rgba(230, 239, 220, 0.88)),
         url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1100&q=85");
 }
 
@@ -1823,13 +1820,10 @@ body:has(.courses-hero) #ambiente {
     padding-bottom: 60px;
 
     background:
-        linear-gradient(
-            90deg,
+        linear-gradient(90deg,
             rgba(16, 44, 35, 0.92),
-            rgba(16, 44, 35, 0.55)
-        ),
-        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=85")
-        center / cover no-repeat;
+            rgba(16, 44, 35, 0.55)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=85") center / cover no-repeat;
 }
 
 .contact-hero .intro {
@@ -1849,19 +1843,15 @@ body:has(.courses-hero) #ambiente {
 
 .contact-reservations-card {
     background-image:
-        linear-gradient(
-            rgba(230, 239, 220, 0.82),
-            rgba(230, 239, 220, 0.88)
-        ),
+        linear-gradient(rgba(230, 239, 220, 0.82),
+            rgba(230, 239, 220, 0.88)),
         url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85");
 }
 
 .contact-information-card {
     background-image:
-        linear-gradient(
-            rgba(230, 239, 220, 0.82),
-            rgba(230, 239, 220, 0.88)
-        ),
+        linear-gradient(rgba(230, 239, 220, 0.82),
+            rgba(230, 239, 220, 0.88)),
         url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85");
 }
 
@@ -1904,6 +1894,15 @@ body:has(#inicio) #espaco {
 
 body:has(.space-hero) #ambiente {
     scroll-margin-top: -120px;
+}
+
+/* INDEX — BAIXAR A FRASE APENAS NO TELEMÓVEL */
+
+@media (max-width: 600px) {
+    #inicio .hero-copy>.eyebrow {
+        position: relative;
+        top: 24px;
+    }
 }
 
 /* LIVRO — ALTURA MAIS COMPACTA NO COMPUTADOR */
