@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Hibiscus, cozinha de origem vegetal em Braga. Descubra sabores, o espaço e uma forma mais natural de estar à mesa.">
+
+    <meta name="theme-color" content="#183c30">
+
+    <title>Hibiscus — À mesa com a natureza</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BOTÃO DO MENU -->
+
+    <button class="mobile-toggle" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Abrir menu">
+        <span aria-hidden="true">☰</span>
+
+        hibiscus
+
+        <svg class="header-leaf" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4C10 2 3 7 5 14c1 4 6 6 10 3 4-3 5-8 5-13Z"></path>
+            <path d="M4 21 15 10"></path>
+            <path d="M9 16v-5M9 16h5"></path>
+        </svg>
+
+
+    </button>
+
+    <!-- FUNDO ESCURO QUANDO O MENU ESTÁ ABERTO -->
+
+    <div class="overlay" hidden></div>
+
+    <!-- MENU LATERAL -->
+
+    <aside class="sidebar" id="sidebar" aria-label="Menu principal">
+        <a class="brand" href="#inicio" aria-label="Hibiscus, início">
+            <svg viewBox="0 0 60 60" aria-hidden="true">
+                <path d="M30 49C8 34 12 15 12 15s18 0 22 20M30 49c-3-26 17-37 17-37s9 26-17 37ZM30 49V29"></path>
+            </svg>
+
+            <strong>
+                hibiscus
+
+                <span>RESTAURANTE VEGAN · BRAGA</span>
+            </strong>
+        </a>
+
+        <div class="nav-label">
+            SINTA-SE EM CASA
+        </div>
+
+        <nav>
+
+            <a class="active" href="index.html" aria-current="page">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m3 10 9-7 9 7"></path>
+                    <path d="M5 9v12h5v-7h4v7h5V9"></path>
+                </svg>
+
+                Início
+            </a>
+
+            <a href="espaco.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21v-9"></path>
+                    <path d="M12 16C5 16 3 11 3 5c6 0 9 3 9 9"></path>
+                    <path d="M12 12c0-6 3-9 9-9 0 6-3 9-9 9Z"></path>
+                </svg>
+
+                O espaço
+            </a>
+
+            <a href="menu.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 3v5a3 3 0 0 0 6 0V3"></path>
+                    <path d="M7 3v18"></path>
+                    <path d="M20 21V3c-4 2-5 6-5 10h5"></path>
+                </svg>
+
+                À mesa
+            </a>
+
+            <a href="#eventos.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                    <path d="M16 3v4M8 3v4M3 11h18"></path>
+                    <path d="m9 16 2 2 4-4"></path>
+                </svg>
+
+                Eventos
+            </a>
+
+            <a href="cursos.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m2 9 10-5 10 5-10 5L2 9Z"></path>
+                    <path d="M6 11v6c4 3 8 3 12 0v-6"></path>
+                    <path d="M22 9v7"></path>
+                </svg>
+
+                Cursos
+            </a>
+
+            <a href="contacto.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="m3 7 9 6 9-6"></path>
+                </svg>
+
+                Contacto
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>
+                Da natureza.<br>
+                Para a sua mesa.
+            </p>
+
+            <a href="https://www.instagram.com/hibiscus.braga/" target="_blank" rel="noopener noreferrer">
+                Instagram ↗
+            </a>
+
+            <span>BRAGA, PORTUGAL</span>
+        </div>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main id="conteudo">
+
+        <!-- INÍCIO -->
+
+        <section class="hero" id="inicio">
+
+            <header class="topline">
+                <span>
+                    <i aria-hidden="true"></i>
+                    NATURALMENTE, HIBISCUS
+                </span>
+
+            </header>
+
+            <div class="hero-copy">
+                <p class="eyebrow">
+                    COZINHA DE ORIGEM VEGETAL
+                </p>
+
+                <h1>
+                    A natureza<br>
+                    tem <em>bom sabor.</em>
+                </h1>
+
+                <p class="intro">
+                    Uma pausa no dia. Um encontro com os sabores.<br>
+                    O prazer de comer bem, no coração de Braga.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button hero-flavours" href="#menu">
+                        Descobrir os sabores
+                    </a>
+
+                    <a class="button hero-flavours" href="#espaco">
+                        Conhecer o espaço
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="hero-photo" role="img" aria-label="Fotografia ilustrativa de uma refeição com vegetais">
+                <span class="photo-caption">
+                    CORES, TEXTURAS E MUITO SABOR
+                </span>
+            </div>
+
+            <div class="round-seal" aria-hidden="true">
+                DE ORIGEM<br>
+
+                <strong>vegetal</strong>
+
+                <span>COM SABOR A NATUREZA</span>
+            </div>
+
+            <div class="hero-footer">
+                <span>
+                    01 / UM CONVITE A DESACELERAR
+                </span>
+
+
+            </div>
+
+        </section>
+
+        <!-- FAIXA DE DESTAQUE -->
+
+        <div class="ribbon" aria-label="Cozinha vegetal, sabores e encontros">
+            <span>De origem vegetal</span>
+
+            <i aria-hidden="true">
+                <svg class="ribbon-icon" viewBox="0 0 24 24">
+                    <path d="M12 8C8 5 3 8 3 13c0 5 4 8 9 8s9-3 9-8c0-5-5-8-9-5Z"></path>
+                    <path d="M12 9V3"></path>
+                    <path d="m7 5 5 4 5-4"></path>
+                    <path d="M7 12c-1 1-1 3 0 4"></path>
+                </svg>
+            </i>
+            <span>À mesa, sem pressa</span>
+
+            <i aria-hidden="true">
+                <svg class="ribbon-icon" viewBox="0 0 24 24">
+                    <path d="M12 8C8 5 3 8 3 13c0 5 4 8 9 8s9-3 9-8c0-5-5-8-9-5Z"></path>
+                    <path d="M12 9V3"></path>
+                    <path d="m7 5 5 4 5-4"></path>
+                    <path d="M7 12c-1 1-1 3 0 4"></path>
+                </svg>
+            </i>
+            <span>Sabores que aproximam</span>
+
+            <i aria-hidden="true">
+                <svg class="ribbon-icon" viewBox="0 0 24 24">
+                    <path d="M12 8C8 5 3 8 3 13c0 5 4 8 9 8s9-3 9-8c0-5-5-8-9-5Z"></path>
+                    <path d="M12 9V3"></path>
+                    <path d="m7 5 5 4 5-4"></path>
+                    <path d="M7 12c-1 1-1 3 0 4"></path>
+                </svg>
+            </i>
+            <span>Naturalmente bom</span>
+        </div>
+
+        <!-- O ESPAÇO -->
+
+        <section class="section space-section" id="espaco">
+
+            <div class="space-image">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+                    alt="Ambiente de restaurante, fotografia ilustrativa" loading="lazy" width="1100" height="1300">
+
+                <span class="image-note">
+                    UMA ATMOSFERA PARA FICAR
+                </span>
+            </div>
+
+            <div class="space-copy">
+                <p class="eyebrow">
+                    02 / O NOSSO ESPAÇO
+                </p>
+
+                <h2>
+                    Há lugares que<br>
+                    nos fazem <em>ficar.</em>
+                </h2>
+
+                <p>
+                    Uma mesa, uma boa conversa e tempo para apreciar.
+                    O Hibiscus é um convite a descobrir a cozinha vegetal
+                    num ambiente descontraído, no centro de Braga.
+                </p>
+
+                <p>
+                    Aqui, a experiência começa antes da primeira garfada.
+                </p>
+
+                <br>
+                <div class="tiny-detail">
+                    <svg class="vegetable-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15 8c-2-2-4-1-5 1L3 21l12-7c2-1 2-4 0-6Z"></path>
+                        <path d="m14 7 1-5M17 8l5-1M16 7l4-4"></path>
+                        <path d="m9 11 2 2M6 16l2 2"></path>
+                    </svg>
+
+                    UM MOMENTO SEU.<br>
+                    UM LUGAR À NOSSA MESA.
+                </div>
+            </div>
+
+        </section>
+
+        <!-- MENU / À MESA -->
+
+        <section class="section menu-section" id="menu">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">
+                        03 / À MESA
+                    </p>
+
+                    <h2>
+                        Vegetal na origem.<br>
+                        <em>Generoso no sabor.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Um universo de possibilidades em cada ingrediente.<br>
+                    Descubra o menu atualizado no nosso Instagram.
+                </p>
+            </div>
+
+            <div class="food-grid">
+
+                <!-- PRIMEIRO DESTAQUE -->
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                            alt="Salada colorida com vegetais, imagem ilustrativa" loading="lazy" width="900"
+                            height="1050">
+
+                        <span>01 / CORES</span>
+                    </div>
+
+                    <h3>
+                        Frescura que se vê.
+                    </h3>
+
+                    <p>
+                        Folhas, legumes e combinações cheias de cor.
+                    </p>
+                </article>
+
+                <!-- SEGUNDO DESTAQUE -->
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                            alt="Taça com ingredientes vegetais, imagem ilustrativa" loading="lazy" width="900"
+                            height="1050">
+
+                        <span>02 / TEXTURAS</span>
+                    </div>
+
+                    <h3>
+                        O simples surpreende.
+                    </h3>
+
+                    <p>
+                        Ingredientes vegetais, novas formas de descobrir.
+                    </p>
+                </article>
+
+                <!-- TERCEIRO DESTAQUE -->
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                            alt="Refeição de inspiração vegetal, imagem ilustrativa" loading="lazy" width="900"
+                            height="1050">
+
+                        <span>03 / DESCOBERTAS</span>
+                    </div>
+
+                    <h3>
+                        Uma mesa de possibilidades.
+                    </h3>
+
+                    <p>
+                        Sabores para explorar, partilhar e voltar.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- VÍDEO DE APRESENTAÇÃO -->
+
+        <section class="film-section" aria-labelledby="film-title">
+
+            <div>
+                <p class="eyebrow">
+                    O HIBISCUS EM MOVIMENTO
+                </p>
+
+                <h2 id="film-title">
+                    Mais do que uma refeição.<br>
+                    <em>Um momento.</em>
+                </h2>
+            </div>
+
+            <div class="video-shell">
+
+                <!--
+                    Para ativar o vídeo:
+                    1. Coloque o ficheiro hibiscus.mp4 na pasta assets.
+                    2. No botão abaixo, altere para:
+                       data-video="assets/hibiscus.mp4"
+                -->
+
+                <button class="video-open" type="button" data-video=""
+                    aria-label="Informação sobre o vídeo de apresentação">
+                    <span class="play" aria-hidden="true">
+                        ▶
+                    </span>
+
+                    <span>
+                        UM OLHAR POR DENTRO
+
+                        <small>
+                            Vídeo de apresentação · brevemente
+                        </small>
+                    </span>
+                </button>
+
+            </div>
+
+
+        </section>
+
+        <!-- EVENTOS E CURSOS -->
+
+        <section class="section experiences" id="eventos">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">
+                        04 / ENCONTROS &amp; EXPERIÊNCIAS
+                    </p>
+
+                    <h2>
+                        À volta da mesa,
+                        <em>acontece a vida.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Um espaço para encontros.<br>
+                    Uma cozinha para novas descobertas.
+                </p>
+            </div>
+
+            <div class="experience-grid">
+
+                <!-- EVENTOS -->
+
+                <article class="experience event home-events-card">
+                    <span class="eyebrow">
+                        EVENTOS
+                    </span>
+
+                    <h3>
+                        Bons momentos<br>
+                        pedem boa companhia.
+                    </h3>
+
+                    <p>
+                        Gostava de reunir pessoas à mesa do Hibiscus?
+                        Fale connosco para conhecer as possibilidades
+                        e a disponibilidade.
+                    </p>
+
+                </article>
+
+                <!-- CURSOS -->
+
+                <article class="experience course home-courses-card" id="curso">
+                    <span class="eyebrow">
+                        05 / CURSOS &amp; PARTILHA
+                    </span>
+
+                    <h3>
+                        A curiosidade é<br>
+                        o primeiro ingrediente.
+                    </h3>
+
+                    <p>
+                        Este será o espaço dedicado aos cursos e workshops.
+                        A programação será apresentada assim que
+                        estiver confirmada.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACTO -->
+
+        <section class="contact-section" id="contacto">
+
+            <p class="eyebrow">
+                06 / ENCONTRE-NOS
+            </p>
+
+            <h2>
+                O próximo encontro
+                pode ser <em>aqui.</em>
+            </h2>
+
+            <div class="contact-grid">
+
+                <!-- MORADA -->
+
+                <div>
+                    <span class="eyebrow">
+                        A NOSSA MORADA
+                    </span>
+
+                    <p>
+                        Largo de São Francisco, 32<br>
+                        Braga, Portugal
+                    </p>
+
+                    <a class="button directions-button"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Hibiscus+Largo+de+Sao+Francisco+32+Braga"
+                        target="_blank" rel="noopener noreferrer">
+                        Abrir no mapa
+                    </a>
+                </div>
+
+                <!-- INSTAGRAM -->
+
+                <div>
+                    <span class="eyebrow">
+                        SIGA O HIBISCUS
+                    </span>
+
+                    <p>
+                        Acompanhe o menu<br>
+                        e as nossas novidades.
+                    </p>
+
+                    <a class="button directions-button" href="https://www.instagram.com/hibiscus.braga/" target="_blank"
+                        rel="noopener noreferrer">
+                        @hibiscus.braga
+                    </a>
+                </div>
+
+                <!-- TELEFONE -->
+
+                <div>
+                    <span class="eyebrow">
+                        FALE CONNOSCO
+                    </span>
+
+                    <p>
+                        Para informações<br>
+                        e disponibilidade.
+                    </p>
+
+                    <a class="button directions-button" href="tel:+351253267183">
+                        253 267 183
+                    </a>
+                </div>
+
+                <!-- HORÁRIO -->
+
+                <div>
+                    <span class="eyebrow">
+                        HORÁRIO DE FUNCIONAMENTO
+                    </span>
+
+                    <p>
+                        Segunda a Sábado · Almoço<br>
+                        12h00 às 15h00
+                    </p>
+
+                    <p>
+                        Sexta e Sábado · Jantar<br>
+                        19h30 às 22h00
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- RODAPÉ -->
+
+            <footer>
+                <a class="footer-brand" href="#inicio">
+                    hibiscus
+                </a>
+
+                <span>
+                    RESTAURANTE VEGAN · BRAGA
+                </span>
+
+                <a href="#inicio">
+                    Voltar ao início ↑
+                </a>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <!-- JANELA DO VÍDEO -->
+
+    <dialog id="video-dialog" aria-labelledby="video-dialog-title">
+        <button class="dialog-close" type="button" aria-label="Fechar vídeo">
+            ×
+        </button>
+
+        <h2 id="video-dialog-title">
+            Um olhar por dentro
+        </h2>
+
+        <p class="video-message">
+            O vídeo de apresentação estará disponível em breve.
+            Entretanto, descubra o Hibiscus no Instagram.
+        </p>
+
+        <video controls playsinline hidden></video>
+
+        <a href="https://www.instagram.com/hibiscus.braga/" target="_blank" rel="noopener noreferrer">
+            Visitar o Instagram ↗
+        </a>
+    </dialog>
+
+</body>
+
+</html>
